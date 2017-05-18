@@ -1,0 +1,52 @@
+// //////////////////////////////////////////////////////////////////////////////////////////////
+// Sonic Font Family Setup
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+@font-face {
+  font-family: 'SSMedium';
+  src: url('../../resources/Sonic Sans Medium.eot'); /* IE9 Compat Modes */
+  src: url('../../resources/Sonic Sans Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../resources/Sonic Sans Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../resources/Sonic Sans Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../resources/Sonic Sans Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'SSSemibold';
+  src: url('../../resources/Sonic Sans Semibold.eot'); /* IE9 Compat Modes */
+  src: url('../../resources/Sonic Sans Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../resources/Sonic Sans Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../resources/Sonic Sans Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../resources/Sonic Sans Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'SSBold';
+  src: url('../../resources/Sonic Sans Bold.eot'); /* IE9 Compat Modes */
+  src: url('../../resources/Sonic Sans Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../resources/Sonic Sans Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../resources/Sonic Sans Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../resources/Sonic Sans Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'SSBlack';
+  src: url('../../resources/Sonic Sans Black.eot'); /* IE9 Compat Modes */
+  src: url('../../resources/Sonic Sans Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../resources/Sonic Sans Black.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../resources/Sonic Sans Black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../resources/Sonic Sans Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+.medium {
+	font-family: 'SSMedium' !important;
+}
+.semibold {
+	font-family: 'SSSemibold' !important;
+}
+.bold {
+	font-family: 'SSBold' !important;
+}
+.black {
+	font-family: 'SSBlack' !important;
+}
