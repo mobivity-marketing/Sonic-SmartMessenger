@@ -23,18 +23,6 @@
   /* IE9 Compat Modes */
   src: url("../../resources/Sonic Sans Black.eot?#iefix") format("embedded-opentype"), url("../../resources/Sonic Sans Black.woff2") format("woff2"), url("../../resources/Sonic Sans Black.woff") format("woff"), url("../../resources/Sonic Sans Black.ttf") format("truetype"); }
 
-.medium {
-  font-family: 'SSMedium' !important; }
-
-.semibold {
-  font-family: 'SSSemibold' !important; }
-
-.bold {
-  font-family: 'SSBold' !important; }
-
-.black {
-  font-family: 'SSBlack' !important; }
-
 .main {
   background: url(../images/bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -65,7 +53,23 @@ h3 {
   font-family: 'SSBold', 'Roboto', sans-serif; }
 
 .activate {
-  text-align: center; }
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 225px; }
+  .activate .activateButton {
+    color: white;
+    font-family: 'SSBold', 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    border: none;
+    background: #EC382F;
+    border-radius: 3px;
+    padding: 7px 56px; }
+  .activate p {
+    font-family: 'SSBlack', 'Roboto', sans-serif;
+    color: black; }
+  .activate .expirationText {
+    padding-top: 10px; }
 
 footer {
   padding: 15px;
