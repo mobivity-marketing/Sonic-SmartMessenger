@@ -72,8 +72,20 @@ h3 {
 		color: black;
 	}
 
+	.fa {
+		display: block;
+	}
+
 	.expirationText {
 		padding-top: 10px;
+
+		&.light {
+			color: #fff;
+		}
+
+		&.dark {
+			color: #000;
+		}
 	}
 
 }
