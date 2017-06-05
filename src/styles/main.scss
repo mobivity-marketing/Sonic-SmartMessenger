@@ -31,19 +31,50 @@ h1 {
 	line-height: 38px;
 	text-transform: uppercase;
 	font-family: 'SSBlack', 'Roboto', sans-serif;
+
+	// iPhone 6/7 Specific Styles
+	@media screen and (min-width: 375px) {
+		font-size: 48px;
+		line-height: 42px;
+	}
+
+	// iPhone 6+/7+ Specific Styles
+	@media screen and (min-width: 414px) {
+		font-size: 52px;
+		line-height: 46px;
+	}
+
 }
 
 h2 {
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 22px;
 	text-transform: uppercase;
 	font-family: 'SSBold', 'Roboto', sans-serif;
+
+	// iPhone 6/7 Specific Styles
+	@media screen and (min-width: 375px) {
+		font-size: 22px;
+		line-height: 26px;
+	}
+
 }
 
 h3 {
 	font-size: 14px;
 	text-transform: uppercase;
 	font-family: 'SSBold', 'Roboto', sans-serif;
+
+	// iPhone 6/7 Specific Styles
+	@media screen and (min-width: 375px) {
+		font-size: 18px;
+	}
+
+	// iPhone 6+/7+ Specific Styles
+	@media screen and (min-width: 414px) {
+		font-size: 24px;
+	}
+
 }
 
 // //////////////////////////////////////////////////////////////////////////////////////////////
@@ -55,32 +86,44 @@ h3 {
 	margin: 0px auto;
 	padding-top: 225px;
 
+	// iPhone 6/7 Specific Styles
+	@media screen and (min-width: 375px) {
+		padding-top: 295px;
+	}
+
+	// iPhone 6+/7+ Specific Styles
+	@media screen and (min-width: 414px) {
+		padding-top: 345px;
+	}
+
+
 	.activateButton {
-		color: white;
 		font-family: 'SSBold', 'Roboto', sans-serif;
 		text-transform: uppercase;
 		font-size: 24px;
+		color: white;
 		border: none;
 		background: $sonicRed;
 		border-radius: 3px;
 		padding: 7px 56px;
-	}
+		margin-bottom: 12px;
 
-	p {
-		font-family: 'SSBlack', 'Roboto', sans-serif;
-		color: black;
-	}
-
-	.expirationText {
-		padding-top: 10px;
-
-		&.light {
-			color: #fff;
+		// iPhone 6/7 Specific Styles
+		@media screen and (min-width: 375px) {
+			padding: 10px 80px;
 		}
 
-		&.dark {
-			color: #000;
+		// iPhone 6+/7+ Specific Styles
+		@media screen and (min-width: 414px) {
+			padding: 13px 104px;
 		}
+
+	}
+
+	.mentionOffer {
+		color: white;
+		font-family: 'SSBold', 'Roboto', sans-serif;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
 	}
 
 }
@@ -92,9 +135,11 @@ h3 {
 .viewLegal {
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;
-	font-family: 'SSBlack', 'Roboto', sans-serif;
-	color: white;
+	font-family: 'SSBold', 'Roboto', sans-serif;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.15);
+	text-transform: uppercase;
+	font-size: 14px;
+	color: black;
 
 	.fa {
 		display: block;
@@ -112,9 +157,15 @@ footer {
 	padding-bottom: 10px;
 
 	p {
-		color: #58595B;
+		color: black;
 		font-size: 10px;
 		text-align: center;
+	}
+
+	.expirationText {
+		font-family: 'SSBold', 'Roboto', sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
 	}
 
 }
