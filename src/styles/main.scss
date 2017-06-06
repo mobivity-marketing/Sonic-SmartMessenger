@@ -12,6 +12,11 @@
 // //////////////////////////////////////////////////////////////////////////////////////////////
 // //////////////////////////////////////////////////////////////////////////////////////////////
 
+// body, html {
+// 	height: 100%;
+// 	width: 100%;
+// }
+
 // //////////////////////////////////////////////////////////////////////////////////////////////
 // Activate Button
 // //////////////////////////////////////////////////////////////////////////////////////////////
@@ -19,16 +24,16 @@
 .activate {
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 225px;
+	padding-top: 135px;
 
 	// iPhone 6/7 Specific Styles
 	@media screen and (min-width: 375px) {
-		padding-top: 295px;
+		padding-top: 210px;
 	}
 
 	// iPhone 6+/7+ Specific Styles
 	@media screen and (min-width: 414px) {
-		padding-top: 345px;
+		padding-top: 255px;
 	}
 
 
@@ -58,7 +63,7 @@
 	.mentionOffer {
 		color: white;
 		font-family: 'SSBold', 'Roboto', sans-serif;
-		text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
 	}
 
 }
@@ -71,7 +76,7 @@
 	text-align: center;
 	margin: 0px auto;
 	font-family: 'SSBold', 'Roboto', sans-serif;
-	text-shadow: 1px 1px rgba(255, 255, 255, 0.15);
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 	text-transform: uppercase;
 	font-size: 14px;
 	color: black;
@@ -115,16 +120,17 @@ footer {
 
 .redeemedFooter {
 	text-align: center;
-	padding-top: 340px;
+	padding-top: 225px;
+	margin-bottom: 20px;
 
 	// iPhone 6/7 Specific Styles
 	@media screen and (min-width: 375px) {
-		padding-top: 420px;
+		padding-top: 300px;
 	}
 
 	// iPhone 6+/7+ Specific Styles
 	@media screen and (min-width: 414px) {
-		padding-top: 470px;
+		padding-top: 360px;
 	}
 
 	p {
