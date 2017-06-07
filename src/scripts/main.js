@@ -58,3 +58,17 @@
   };
 
 }) (jQuery);
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+// Hiding and Showing Elements
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+$('#activateButton').on('click', function() {
+  $('#hiddenFooter').addClass('hide');
+  $('#overlay').removeClass('hide');
+});
+
+$('#back').on('click', function() {
+  $('#hiddenFooter').removeClass('hide');
+  $('#overlay').addClass('hide');
+});
