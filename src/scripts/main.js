@@ -72,3 +72,38 @@ $('#back').on('click', function() {
   $('#hiddenFooter').removeClass('hide');
   $('#overlay').addClass('hide');
 });
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+// Press and Hold to Redeem
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+var button = document.getElementById("circleButton");
+var timeLeft = document.getElementById("timeLeft");
+var counter = 3;
+
+//  Mouse Down/Up for Desktop
+
+button.addEventListener("mousedown", function(){
+  $('#centerScreenText').addClass('hide');
+  $('#centerScreenCountdown').removeClass('hide');
+  timeLeft.innerHTML = counter;
+});
+button.addEventListener("mouseup", function(){
+  $('#centerScreenCountdown').addClass('hide');
+  $('#centerScreenText').removeClass('hide');
+  timeLeft.innerHTML = "";
+});
+
+// Touch Start/End for Mobile
+
+button.addEventListener("touchstart", function(){
+  $('#centerScreenText').addClass('hide');
+  $('#centerScreenCountdown').removeClass('hide');
+  timeLeft.innerHTML = counter;
+});
+
+button.addEventListener("touchend", function(){
+  $('#centerScreenCountdown').addClass('hide');
+  $('#centerScreenText').removeClass('hide');
+  timeLeft.innerHTML = "";
+});

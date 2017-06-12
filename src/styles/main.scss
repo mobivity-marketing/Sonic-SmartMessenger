@@ -146,16 +146,12 @@ footer {
 		text-align: center;
 		font-size: 22px;
 		font-family: 'SSBold', 'Roboto', sans-serif;
-		margin-top: 40px;
-
-		.mentionOffer {
-			margin-bottom: 20px;
-		}
+		margin-top: 30px;
 
 		// iPhone 6/7 Specific Styles
 		@media screen and (min-width: 375px) {
 			font-size: 28px;
-			margin-top: 75px;
+			margin-top: 60px;
 		}
 
 		// iPhone 6+/7+ Specific Styles
@@ -164,12 +160,61 @@ footer {
 			margin-top: 95px;
 		}
 
+		.mentionOffer {
+			margin-bottom: 40px;
+		}
+
+	}
+
+	.centerScreenCountdown {
+		text-align: center;
+		margin-top: 25px;
+
+		h1, h2, h3 {
+			color: white;
+		}
+
+		h1 {
+			font-size: 150px;
+			line-height: 150px;
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		// iPhone 6/7 Specific Styles
+		@media screen and (min-width: 375px) {
+			margin-top: 55px;
+
+			h1 {
+				font-size: 192px;
+				line-height: 192px;
+			}
+		}
+
+		// iPhone 6+/7+ Specific Styles
+		@media screen and (min-width: 414px) {
+			margin-top: 75px;
+			
+			h1 {
+				font-size: 234px;
+				line-height: 234px;
+			}
+
+		}
+
 	}
 
 	.circle {
 		width: 120px;
 		height: 120px;
 		border-radius: 50%;
+		border: none;
 		-moz-border-radius: 50%;
 		-webkit-border-radius: 50%;
 		text-align: center;
@@ -180,8 +225,24 @@ footer {
 		background-color: white;
 		display: block;
 		position: fixed;
-	    bottom: 45px;
-	    left: 32%;
+	    bottom: 35px;
+	    left: 31%;
+	    user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+
+        // iPhone 6/7 Specific Styles
+        @media screen and (min-width: 375px) {
+        	left: 33.5%;
+        }
+
+        // iPhone 6+/7+ Specific Styles
+        @media screen and (min-width: 414px) {
+        	
+        }
+
 	}
 
 }

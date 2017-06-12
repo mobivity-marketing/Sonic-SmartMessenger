@@ -59,11 +59,16 @@
 		<div class="overlay hide" id="overlay">
 			<div class="container">
 				<button class="back" id="back"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Go Back</span></button>
-				<div class="centerScreenText">
+				<div class="centerScreenText" id="centerScreenText">
 					<p class="mentionOffer">Please mention offer when ordering.</p>
 					<p class="showCarhop">Show this screen to your carhop when you are ready to redeem.</p>
 				</div>
-				<button class="circle">Click and<br>Hold to<br>Redeem</button>
+				<div class="centerScreenCountdown hide" id="centerScreenCountdown">
+					<h2>Redeeming in</h2>
+					<h1 id="timeLeft">3</h1>
+					<h3>Release to Cancel</h3>
+				</div>
+				<button class="circle" id="circleButton">Click and<br>Hold to<br>Redeem</button>
 			</div>
 		</div>
 		<!-- End Overlay Container -->
