@@ -21,6 +21,8 @@
 		<link rel="stylesheet" href="dist/styles/main.css">
 		<!-- Document Style Sheet for Replaceable Elements -->
 		<style>
+
+			/* Define a new filepath for background image here. */
 			.main {
 				background-image: url(dist/images/bg.jpg);
 				height: 100%;
@@ -28,6 +30,12 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
+
+			/* Define the hex color for the offer text here. */
+			h1, h2, h3 {
+			  color: #6330C8;
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -35,14 +43,20 @@
 		<!-- Start Main Container -->
 		<div class="main">
 			<div class="container">
-				<h3 class="offerTitle">Ice Cream Social</h3>
-				<h1 class="offerText">Buy 1 Get 1 Free</h1>
-				<h2 class="offerDescription">Buy a Triple Chocolate Master Blast & Get One Free</h2>
+				<!-- Offer Title Field - Replace from New Field in C4 -->
+				<h3 class="offerTitle" id="offerTitle">Ice Cream Social</h3>
+				<!-- Offer Text Field - Replace from Field in C4 Already -->
+				<h1 class="offerText" id="offerText">Buy 1 Get 1 Free</h1>
+				<!-- Offer Description Field - Replace from New Field in C4 -->
+				<h2 class="offerDescription" id="offerDescription">Buy a Triple Chocolate Master Blast & Get One Free</h2>
 			</div>
 			<div class="container redeemedFooter">
-				<p class="offerTitle">Ice Cream Social</p>
-				<p class="offerDescription">Buy a Triple Chocolate Master Blast & Get One Free</p>
-				<p class="offerRedemptionInformation"><span class="redeemedTitle">Redeemed</span> - March 15, 2017 at 8:48PM.</p>
+				<!-- Offer Title Field - Replace from New Field in C4 -->
+				<p class="offerTitle" id="offerTitle">Ice Cream Social</p>
+				<!-- Offer Description Field - Replace from New Field in C4 -->
+				<p class="offerDescription" id="offerDescription">Buy a Triple Chocolate Master Blast & Get One Free</p>
+				<!-- Will need to dynamically plug in redeemed date/time into #redeemedDate below. -->
+				<p class="offerRedemptionInformation"><span class="redeemedTitle">Redeemed</span> - <span id="redeemedDate">March 15, 2017 at 8:48PM</span>.</p>
 			</div>
 		</div>
 		<!-- End Main Container -->

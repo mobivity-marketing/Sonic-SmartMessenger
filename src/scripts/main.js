@@ -79,31 +79,70 @@ $('#back').on('click', function() {
 
 var button = document.getElementById("circleButton");
 var timeLeft = document.getElementById("timeLeft");
-var counter = 3;
+var counter = 5;
+var isLetGo = true;
 
-//  Mouse Down/Up for Desktop
+// Defining Mouse and Touch Down/Up, as Well as Hide/Show of Divs
 
-button.addEventListener("mousedown", function(){
+button.addEventListener("mousedown", function() {
   $('#centerScreenText').addClass('hide');
   $('#centerScreenCountdown').removeClass('hide');
-  timeLeft.innerHTML = counter;
+  isLetGo = false;
 });
+
+button.addEventListener("touchstart", function() {
+  $('#centerScreenText').addClass('hide');
+  $('#centerScreenCountdown').removeClass('hide');
+  isLetGo = false;
+});
+
 button.addEventListener("mouseup", function(){
   $('#centerScreenCountdown').addClass('hide');
   $('#centerScreenText').removeClass('hide');
-  timeLeft.innerHTML = "";
-});
-
-// Touch Start/End for Mobile
-
-button.addEventListener("touchstart", function(){
-  $('#centerScreenText').addClass('hide');
-  $('#centerScreenCountdown').removeClass('hide');
-  timeLeft.innerHTML = counter;
+  isLetGo = true;
 });
 
 button.addEventListener("touchend", function(){
   $('#centerScreenCountdown').addClass('hide');
   $('#centerScreenText').removeClass('hide');
-  timeLeft.innerHTML = "";
+  isLetGo = true;
 });
+
+// While Loop Countdown Based on Events
+
+function countdown() {
+
+  timeLeft.innerHTML = counter;
+
+  if (counter >= 0 && !isLetGo) {
+    counter--;
+  }
+
+  else if (counter >= 0 && isLetGo) {
+    counter = 5;
+    return;
+  }
+
+  else if (counter < 0 && !isLetGo) {
+    window.location.href = "offerRedeemed.html";
+  }
+
+  window.setTimeout(countdown, 1000);
+
+}
+
+button.addEventListener("mousedown", function() {
+  countdown();
+});
+
+button.addEventListener("touchstart", function() {
+  countdown();
+});
+
+
+
+
+
+
+
+
